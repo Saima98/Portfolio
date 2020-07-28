@@ -1,0 +1,396 @@
+*{
+	margin:0;
+	padding:0;	
+	box-sizing:border-box;
+}
+body{
+	/*font-family: 'Great Vibes', cursive;*/
+	/*font-family: 'Parisienne', cursive;
+	font-family: 'Roboto', sans-serif;*/
+	font-family: 'Aleo', serif;
+}
+
+
+
+/*Common CSS*/
+span{
+	color: #d22b3b;
+}
+.box-btn {
+	padding: 5px 25px;
+	text-transform: capitalize;
+	background-color: #d22b3b;
+	color: white;
+	font-size: 14px;
+}
+.box-btn:hover {
+	color: white;
+	background-color: black;
+	text-decoration: none;
+}
+.border-btn {
+	padding: 4px 24px;
+	text-transform: capitalize;
+	border: 2px solid #d22b3b;
+	color: #d22b3b;
+	font-size: 14px;
+	position: relative;
+	overflow: hidden;
+}
+.border-btn::after {
+	position: absolute;
+	content: "";
+	background-color: #d22b3b;
+	width: 100%;
+	height: 100%;
+	right: -100%;
+	top: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.border-btn:hover {
+	color: white;
+}
+.border-btn:hover.border-btn::after {
+	right: 0;
+	visibility: visible;
+	z-index: -1;
+}
+
+/*Header*/
+
+.banner-area{}
+.header-area{}
+.header{}
+.logo {
+	padding-top: 12px;
+}
+.logo p {
+	color: #d22b3b;
+	text-transform: capitalize;
+	font-size: 34px;
+}
+.menu{}
+.menu ul {
+	list-style: none;
+	color: black;
+	padding: 24px 0;
+}
+.menu ul li {
+	display: inline;
+	font-size: 14px;
+	text-transform: capitalize;
+	padding: 30px;
+}
+.menu ul li a {
+	color: black;
+}
+.menu ul li a:hover {
+	color: #d22b3b;
+	text-decoration: none;
+}
+.banner {
+	padding: 0 100px;
+}
+.banner-left {
+	padding:  130px 0;
+}
+.banner-left h4 {
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 2px;
+}
+.banner-left h1 {
+	font-weight: bold;
+	font-size: 62px;
+	position: relative;
+}
+.banner-left h1::before {
+	position: absolute;
+	content: "";
+	width: 281px;
+	height: 4px;
+	background-color: #ff98a8;
+	bottom: 0;
+	right: 22px;
+}
+.banner-left p {
+	color: #444242;
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+.link{}
+.link a {
+	margin-right: 10px;
+}
+.banner-right{}
+.banner-right img {
+	width: 100%;
+}
+
+
+/*Banner Section End*/
+
+/*About Section Start*/
+
+.about-area {
+	background-color: #dddddd3d;
+}
+.about {
+	padding: 80px 100px 110px 80px;
+	margin-top: 80px;
+}
+.intro-header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.intro-header p{}
+.intro-header p span{}
+.intro-header h2 {
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: bold;
+}
+.about-btn{}
+.about-left{}
+.about-img {
+	padding-left: 90px;
+	padding-right: 30px;
+	position: relative;
+}
+.about-img::after {
+	position: absolute;
+	content: "";
+	width: 55%;
+	height: 100%;
+	top: 35px;
+	left: 55px;
+	border: 3px dashed #d22b3b;
+	z-index: -1;
+}
+.about-img img{
+	width: 100%;
+}
+.experience {
+	background-color: #d22b3b;
+	width: 124px;
+	height: 110px;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding: 15px 5px;
+	text-transform: capitalize;
+	position: absolute;
+	content: "";
+	bottom: -20px;
+	left: 15px;
+}
+.experience h2 {
+	font-size: 20px;
+}
+.about-link{}
+.about-link i {
+	font-size: 14px;
+	padding: 3px;
+}
+.about-right {
+	margin-left: -30px;
+}
+.about-right-menu{}
+.about-right-menu .btn {
+	background-color: #d22b3b;
+	color: white;
+	margin-bottom: 15px;
+	font-size: 12px;
+	padding: 5px 15px;
+}
+.about-right-menu .btn:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.single-about-desctiption{}
+.single-about-desctiption h5 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0px 35px 0px;
+}
+.single-about-desctiption p {
+	font-size: 13px;
+	color: #4e4e4f;
+	margin-bottom: 45px;
+}
+#about_me_sec{
+	
+}
+#education_sec {
+	display: none;
+}
+#skill_sec {
+	display: none;
+}
+#experience_sec {
+	display: none;
+}
+
+/*About Section End*/
+/*Service Section Start*/
+
+.service-area{
+	
+}
+.service{
+	padding: 100px;
+}
+.services{}
+.single-service {
+	box-shadow: 0px 0px 20px 1px #e1e1e3;
+	margin: 15px;
+	padding: 25px;
+	min-height: 256px;
+}
+.single-service h1 {
+	font-size: 36px;
+}
+.single-service p {
+	color: gray;
+	font-size: 16px;
+	text-align: center;
+	font-family: initial;
+}
+.single-service:hover {
+	background-color: #d22b3b;
+	color: white;
+}
+.single-service:hover p {
+	color: white;
+}
+#web_design{
+	
+}
+/*Owl Start*/
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+	display: block;
+}
+.owl-prev span {
+	color: white;
+	background-color: #d22b3b;
+	position: absolute;
+	content: "";
+	top: 32%;
+	left: -80px;
+	padding: 20px;
+	font-weight: bold;
+}
+.owl-next span {
+	color: white;
+	background-color: #d22b3b;
+	position: absolute;
+	content: "";
+	top: 32%;
+	right: -80px;
+	padding: 20px;
+	font-weight: bold;
+}
+.owl-dots {
+	margin: 0 auto;
+	width: 120px;
+}
+.owl-dot{
+	
+}
+.owl-dot span {
+	padding: 3px;
+	display: inline-block;
+	margin: 0 10px;
+	border: 2px solid #d22b3b;
+}
+.owl-dot.active span{
+	background-color: #d22b3b;
+}
+/*Owl End*/
+
+
+/*Service Section End*/
+
+/*Portfolio Section Start*/
+
+.portfolio-area{}
+.portfolio {
+	padding: 0 100px;
+}
+.portfolio-btns {
+	width: 410px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.portfolio-menu{}
+.portfolio-menu button {
+	border: 1px solid #d22b3b;
+	background-color: white;
+	padding: 5px 30px;
+	font-size: 14px;
+}
+.portfolio-items{}
+.single-portfolio {
+	margin-bottom: 50px;
+}
+.project-img {
+	border: 1px solid black;
+	position: relative;
+}
+.project-img::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	left: 0;
+	top: 0;
+	opacity: 0.8;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.project-img img {
+	width: 100%;
+	max-height: 278px;
+}
+.project-description {
+	position: absolute;
+	content: "";
+	top: -35px;
+	width: 100%;
+	left: 0;
+	padding: 45px;
+	color: white;
+	transition: 0.5s;
+	visibility: hidden;
+}
+.project-description h1 {
+	text-transform: capitalize;
+	font-size: 28px;
+	font-weight: bold;
+}
+.project-description p {
+	font-size: 12px;
+	margin-bottom: 120px;
+	transition: 0.5s;
+}
+.project-description a{}
+.single-portfolio:hover .project-img::after {
+	visibility: visible;
+}
+.single-portfolio:hover .project-description {
+	top: 30px;
+	visibility: visible;
+}
+.single-portfolio:hover .project-description p {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
