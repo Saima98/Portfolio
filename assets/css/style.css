@@ -190,7 +190,10 @@ span{
 	font-size: 20px;
 }
 .about-link{}
-.about-link i {
+.about-link a {
+	color:white;
+}
+.about-link a i {
 	font-size: 14px;
 	padding: 3px;
 }
@@ -337,7 +340,7 @@ span{
 	margin-bottom: 50px;
 }
 .project-img {
-	border: 1px solid black;
+	border: 1px solid #aaa4a482;
 	position: relative;
 }
 .project-img::after {
@@ -389,8 +392,85 @@ span{
 	margin-bottom: 10px;
 }
 
+/*Portfolio Section End
+Contact Section Start*/
 
+.contact-area {
+	background-color: #dddddd3d;
+	padding: 100px;
+}
+.contact {
+	background-color: white;
+	width: 550px;
+	margin: 0 auto;
+	padding: 40px;
+	box-shadow: 0px 0px 20px 1px #e1e1e3;
+}
+.contact-email {
+	margin-top: -35px;
+	text-align: center;
+	position: relative;
+}
+.contact-email i.fa-reply-all {
+	color: #d2cfcf;
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	font-size: 40px;
+}
+.contact-email h2 {
+	color: #686767;
+	font-size: 28px;
+}
+.contact-link {
+	margin-top: 40px;
+}
+.contact-link a {
+	padding: 0 2px;
+}
+.contact-link a i{
+	color: white;
+	font-size: 20px;
+	padding:5px;
+	border-radius: 6px;
+}
+.contact-link a i.fa-envelope{
+	background-color: black;
+}
+.contact-link a i.fa-facebook-f {
+	background-color: #0980EC;
+	padding: 5px 10px;
+}
+.contact-link a i.fa-linkedin-in{
+	background-color: #0073B0;;
+}
+.contact-link a i.fa-github {
+	background-color:black;
+}
+.contact-link a i.fa-instagram{
+	background-image: linear-gradient(to right, #FFC867,orange,#D32E94,#4D69D6);
+}
+.contact-link a span {
+	background-color: #04B330;
+	border-radius: 6px;
+	padding: 8px 5px 6px 5px;
+}
+.contact-link  a span img{
+	width:22px;
+}
 
+/*Contact Section End
+Footer Section Start*/
 
-
-
+.footer-area {
+	background-color: #e1dfe1;
+}
+.footer {
+	padding: 20px 100px 10px 100px;
+}
+.footer p {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+}
