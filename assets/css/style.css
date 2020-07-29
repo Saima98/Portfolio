@@ -409,8 +409,7 @@ Banner Section Start*/
 	font-size: 14px;
 }
 .portfolio-menu button:hover {
-	background-color: #d22b3b;
-	color: white;
+	background-color: #f2e5e7;
 }
 .port-menu-active {
 	background-color: #d22b3b !important;
