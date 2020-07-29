@@ -16,6 +16,23 @@ body{
 span{
 	color: #d22b3b;
 }
+.current{
+	position:relative;
+}
+.current::after {
+	position: absolute;
+	content: "";
+	width: 60%;
+	height: 2px;
+	bottom: -6px;
+	left: 20%;
+}
+.header-area .current::after{
+	background-color: #d22b3b;
+}
+.header-area2 .current::after{
+	background-color: white;
+}
 .box-btn {
 	padding: 5px 25px;
 	text-transform: capitalize;
@@ -57,37 +74,88 @@ span{
 	z-index: -1;
 }
 
-/*Header*/
+/*Header Startde*/
 
-.banner-area{}
-.header-area{}
-.header{}
+.header-area {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+.header-area2 {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	background-color: #d22b3b;
+}
+.header {
+	padding: 0 100px;
+}
 .logo {
-	padding-top: 12px;
+	padding-top: 5px;
 }
 .logo p {
-	color: #d22b3b;
 	text-transform: capitalize;
 	font-size: 34px;
 }
-.menu{}
+.header-area .logo p {
+	color: #d22b3b;
+}
+.header-area2 .logo p {
+	color: white;
+}
+.menu{
+	float: right;
+}
 .menu ul {
 	list-style: none;
 	color: black;
-	padding: 24px 0;
+	padding-top: 20px;
+	text-transform: capitalize;
 }
 .menu ul li {
 	display: inline;
 	font-size: 14px;
-	text-transform: capitalize;
-	padding: 30px;
 }
 .menu ul li a {
+	padding: 6px 30px;
+	position: relative;
+}
+.header-area .menu ul li a {
 	color: black;
 }
+.header-area2 .menu ul li a {
+	color: white;
+}
+.menu ul li a::after {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 2px;
+	left: 50%;
+	bottom: 0;
+	transition:0.5s;
+}
+.header-area .menu ul li a::after {
+	background-color: #d22b3b;
+}
+.header-area2 .menu ul li a::after {
+	background-color: white;
+}
+.menu ul li a:hover::after {
+	width: 100%;
+	left: 0;
+}
 .menu ul li a:hover {
-	color: #d22b3b;
 	text-decoration: none;
+}
+
+/*Header Section End
+Banner Section Start*/
+
+
+.banner-area {
+	padding-top: 80px;
+	background-color: ;
 }
 .banner {
 	padding: 0 100px;
@@ -209,8 +277,13 @@ span{
 	padding: 5px 15px;
 }
 .about-right-menu .btn:hover {
-	background-color: white;
-	color: black;
+	background-color: #f54e5e;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-menu-active {
+	background-color: white !important;
+	color: black !important;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .single-about-desctiption{}
@@ -335,6 +408,14 @@ span{
 	padding: 5px 30px;
 	font-size: 14px;
 }
+.portfolio-menu button:hover {
+	background-color: #d22b3b;
+	color: white;
+}
+.port-menu-active {
+	background-color: #d22b3b !important;
+	color: white;
+}
 .portfolio-items{}
 .single-portfolio {
 	margin-bottom: 50px;
@@ -428,6 +509,11 @@ Contact Section Start*/
 }
 .contact-link a {
 	padding: 0 2px;
+	transition: 0.3s;
+}
+.contact-link a:hover {
+	position: relative;
+	bottom: 5px;
 }
 .contact-link a i{
 	color: white;
@@ -474,3 +560,4 @@ Footer Section Start*/
 	text-align: center;
 	padding-top: 10px;
 }
+
