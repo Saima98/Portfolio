@@ -9,6 +9,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+		<!--Barfiller CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/css/barfiller.css"/>
 		<!--Owl CSS-->
 		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css"/>
@@ -24,6 +26,15 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css"/>
 	</head>
 	<body>
+		<div class="preloader">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 		<section class="header-area" id="">
 			<div class="container">
 				<div class="header">
@@ -56,18 +67,20 @@
 					<div class="col-6">
 						<div class="banner-left">
 							<h4><span>hello</span></h4>
-							<h1>I'am <span>Saima</span> web developer</h1>
+							<h1>I'am <span>Saima</span><br/><span style="color:black; font-size:54px;" class="type"></span></h1>
 							<p>I am Full stack Web developer with 3+ years of experience. I can design and develop and costumize your website</p>
 							<div class="link">
-								<a class="box-btn btn" href="#">hire me</a>
-								<a class="border-btn btn" href="#">portfolio</a>
+								<a class="box-btn btn" href="#contact">hire me</a>
+								<a class="border-btn btn" href="#portfolio">portfolio</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-6">
-						<div class="banner-right">
-							<img src="assets/img/received_2798069950244730.jpeg" alt="me" title="Saima"/>
+						<div class="banner-right wow animated fadeInRight" data-wow-delay="0.3sec">
+							<img src="assets/img/png.png" alt="me" title="Saima"/>
 						</div>
+						<div class="img-back-1"></div>
+						<div class="img-back-2"></div>
 					</div>
 				</div>
 			</div>
@@ -89,7 +102,7 @@
 								<div class="about-img">
 									<img src="assets/img/about.jpg" alt="Saima" title="saima" />
 								</div>
-								<div class="experience">
+								<div class="experience wow animated fadeInLeft" data-wow-delay="0.3sec">
 									<h2>3 years experience</h2>
 									<div class="about-link">
 										<a href="https://web.facebook.com/people/Saima-Najmin/100011289346754"><i class="fab fa-facebook-f"></i></a>
@@ -111,35 +124,140 @@
 								</div>
 								<div class="single-about-desctiption" id="about_me_sec">
 									<h5>Hi i am full stack web developer</h5>
-									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope a website useing PHP,JavaScript,Laravel.</p>
+									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope website useing PHP,JavaScript,Laravel. I code full fresh and clean.</p>
 									<div class="link">
-										<a class="box-btn btn" href="#">Download CV</a>
-										<a class="border-btn btn" href="#">Contract</a>
+										<a class="box-btn btn" href="assets/files/Saima_Najmin-CV.pdf" download>Download CV</a>
+										<a class="border-btn btn" href="#contact">Contract</a>
 									</div>
 								</div>
 								<div class="single-about-desctiption" id="education_sec">
-									<h5>education_sec</h5>
-									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope a website useing PHP,JavaScript,Laravel.</p>
-									<div class="link">
-										<a class="box-btn btn" href="#">Download CV</a>
-										<a class="box-btn btn" href="#">Contract</a>
+									<div class="single-education-sec">
+										<h5>BSc in Computer Science & Engineering - Metropolitan University, Sylhet.</h5>
+										<h6>2016-2020</h6>
+										<p>CGPA - 3.52</p>
+										<div class="line"></div>
+									</div>
+									<div class="single-education-sec">
+										<h5>HSC - Sunamgonj Govt College, Sunamgonj. </h5>
+										<h6>2013-2014</h6>
+										<p>GPA - 4.17</p>
+										<div class="line"></div>
+									</div>
+									<div class="single-education-sec">
+										<h5>Govt S.C. Girls High School,Sunamgonj</h5>
+										<h6>2016-2020</h6>
+										<p>GPA - 5.00</p>
+										<div class="line"></div>
 									</div>
 								</div>
 								<div class="single-about-desctiption" id="skill_sec">
-									<h5>skill_sec</h5>
-									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope a website useing PHP,JavaScript,Laravel.</p>
-									<div class="link">
-										<a class="box-btn btn" href="#">Download CV</a>
-										<a class="box-btn btn" href="#">Contract</a>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>HTML :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar1" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="100"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>CSS :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar2" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="100"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>Bootstrap :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar3" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="100"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>PHP :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar4" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="95"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>Laravel :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar5" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="90"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>Js :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar6" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="50"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>Query :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar7" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="100"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single-skill">
+										<div class="row">
+											<div class="col-2">
+												<h5>Jquery :</h5>
+											</div>
+											<div class="col-10">
+												<div id="bar8" class="barfiller">
+													<span class="tip"></span>
+													<span class="fill" data-percentage="60"></span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="single-about-desctiption" id="experience_sec">
-									<h5>experience_sec</h5>
-									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope a website useing PHP,JavaScript,Laravel.</p>
-									<div class="link">
-										<a class="box-btn btn" href="#">Download CV</a>
-										<a class="box-btn btn" href="#">Contract</a>
-									</div>
+									<p>I have 3+ years experience on web development. i design 20+ website and develope 6+ website.</p>
 								</div>
 							</div>
 						</div>
@@ -163,16 +281,28 @@
 						<p>I can design your website by useing html, css, bootstrap, javascript.I code full fresh and clean.Deisigning is my passion.</p>
 					</div>
 					<div class="single-service">
-						<h1>web dedevelope</h1>  
-						<p>I can design your website by useing html, css, bootstrap, javascript.I code full fresh and clean.Deisigning is my passion.</p>
+						<h1>web develope</h1>  
+						<p>I can develope your website by useing php,laravel,js.I code full fresh and clean.</p>
 					</div>
 					<div class="single-service">
-						<h1>web desing</h1> 
-						<p>I can design your website by useing html, css, bootstrap, javascript.I code full fresh and clean.Deisigning is my passion.</p>
+						<h1>PSD to HTML</h1> 
+						<p>I can convert a PSD file to Html.</p>
 					</div>
 					<div class="single-service">
-						<h1>web dedevelope</h1>  
-						<p>I can design your website by useing html, css, bootstrap, javascript.I code full fresh and clean.Deisigning is my passion.</p>
+						<h1>Laravel Aplication</h1>  
+						<p>I can develope any type of laravel base website.</p>
+					</div>
+					<div class="single-service">
+						<h1>bug fixing</h1> 
+						<p>I can fix any type of frontendor backend bug and error.</p>
+					</div>
+					<div class="single-service">
+						<h1>custome website design</h1>  
+						<p>I can custome any type of website design.</p>
+					</div>
+					<div class="single-service">
+						<h1>e-commerce website</h1>  
+						<p>I can design and develope any type of e-commerce website.</p>
 					</div>
 				</div>
 			</div>
@@ -312,7 +442,7 @@
 <!-- Contact Section Start -->
 	<section class="contact-area" id="contact">
 		<div class="container">
-			<div class="contact">
+			<div class="contact wow animated fadeInUp" data-wow-delay="0.3sec">
 				<div class="intro-header mx-auto">
 					<p><span>Get In Touch</span></p>
 				</div>
@@ -353,9 +483,16 @@
 	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
 	<script type="text/javascript" src="assets/js/isotope.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.barfiller.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
 	<script type="text/javascript">
+		//Preloader
+		$(window).on("load", function(){
+			$(".preloader").fadeOut();
+		});
+		//WOW js
+		new WOW().init();
 		//active header
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
@@ -408,9 +545,27 @@
 					$("#skill_sec").hide();
 					$("#experience_sec").show();
 				});
+				//barfiller
+				$('#bar1').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar2').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar3').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar4').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar5').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar6').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar7').barfiller({barColor: "#d22b3b",duration: '500'});
+				$('#bar8').barfiller({barColor: "#d22b3b",duration: '500'});
 			});
-			
-			//owl-service
+			//type	  
+			  var typed = new Typed(".type", {
+				strings: [
+					"Web Designer",
+					"Web Developer"
+					],
+			typeSpeed:50,
+			backSpeed:50,
+			loop:true
+		});
+		//owl-service
 		$(document).ready(function(){
 			$('.services').owlCarousel({
 				loop:true,
@@ -439,14 +594,11 @@
 			})
 		});
 		// init Isotope
-			var $grid = $('.portfolio-items').isotope({
-		 // options
-			});
-		// filter items on button click
-			$('.portfolio-menu').on( 'click', 'button', function() {
-			  var filterValue = $(this).attr('data-filter');
-			  $grid.isotope({ filter: filterValue });
-			});
+		var $grid = $('.portfolio-items').isotope({});
+		$('.portfolio-menu').on( 'click', 'button', function() {
+		  var filterValue = $(this).attr('data-filter');
+		  $grid.isotope({ filter: filterValue });
+		});
 	</script>
 	</body>
 </html>

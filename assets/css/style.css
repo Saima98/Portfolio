@@ -8,11 +8,74 @@ body{
 	/*font-family: 'Parisienne', cursive;
 	font-family: 'Roboto', sans-serif;*/
 	font-family: 'Aleo', serif;
+	color:black;
 }
 
 
 
 /*Common CSS*/
+.preloader {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+.preloader ul {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.preloader ul li {
+	width: 10px;
+	height: 20px;
+	background-color: #d22b3b;
+	display: inline-block;
+	margin: 0 5px;
+	animation: animate 1s infinite;
+	border-radius: 72px;
+}
+@keyframes animate{
+  0%{
+    transform:scaleY(1)
+  }
+  25%{
+    transform:scaleY(1)
+  }
+  50%{
+    transform:scaleY(1)
+  }
+  75%{
+    transform:scaleY(1)
+  }
+  100%{
+    transform:scaleY(2)
+  }
+}
+
+.preloader ul li:nth-child(1){
+	animation-delay:.1s;
+	background-color: #F88E04;
+}
+.preloader ul li:nth-child(2){
+	animation-delay:.2s;
+	background-color: #F86E1F;
+}
+.preloader ul li:nth-child(3){
+	animation-delay:.3s;
+	background-color: #F84841;
+}
+.preloader ul li:nth-child(4){
+	animation-delay:.4s;
+	background-color: #F81F65;
+}
+.preloader ul li:nth-child(5){
+	animation-delay:.5s;
+	background-color: #F8047C;
+}
 span{
 	color: #d22b3b;
 }
@@ -87,11 +150,18 @@ span{
 	z-index: 9999;
 	background-color: #d22b3b;
 }
-.header {
+.header-area .header {
 	padding: 0 100px;
 }
-.logo {
+.header-area2 .header {
+	padding: 0 100px;
+	margin-bottom: -15px;
+}
+.header-area .logo {
 	padding-top: 5px;
+}
+.header-area2 .logo {
+	padding-top: 0px;
 }
 .logo p {
 	text-transform: capitalize;
@@ -106,10 +176,14 @@ span{
 .menu{
 	float: right;
 }
-.menu ul {
+.header-area .menu ul {
 	list-style: none;
-	color: black;
 	padding-top: 20px;
+	text-transform: capitalize;
+}
+.header-area2 .menu ul {
+	list-style: none;
+	padding-top: 15px;
 	text-transform: capitalize;
 }
 .menu ul li {
@@ -177,11 +251,11 @@ Banner Section Start*/
 .banner-left h1::before {
 	position: absolute;
 	content: "";
-	width: 281px;
+	width: 257px;
 	height: 4px;
 	background-color: #ff98a8;
 	bottom: 0;
-	right: 22px;
+	right: 50px;
 }
 .banner-left p {
 	color: #444242;
@@ -192,9 +266,42 @@ Banner Section Start*/
 .link a {
 	margin-right: 10px;
 }
-.banner-right{}
+/*
+.banner-right {
+	padding: 50px 0 0 80px;
+}
 .banner-right img {
 	width: 100%;
+}*/
+.banner-right {
+	padding: 25px 50px 0px 100px;
+}
+.banner-right img {
+	width: 100%;
+}
+.img-back-1 {
+	width: 360px;
+	height: 228px;
+	background-color: #d22b3b;
+	margin: 300px auto;
+	transform: rotate(151deg);
+	border-radius: 115%;
+	position: absolute;
+	top: -89px;
+	z-index: -1;
+	left: 102px;
+}
+.img-back-2{
+	width: 360px;
+	height: 228px;
+	background-color: #ee7b86;
+	margin: 300px auto;
+	transform: rotate(175deg);
+	border-radius: 115%;
+	position: absolute;
+	top: -89px;
+	z-index: -11;
+	left: 102px;
 }
 
 
@@ -221,7 +328,9 @@ Banner Section Start*/
 	font-weight: bold;
 }
 .about-btn{}
-.about-left{}
+.about-left{
+	position: relative;
+}
 .about-img {
 	padding-left: 90px;
 	padding-right: 30px;
@@ -297,6 +406,37 @@ Banner Section Start*/
 	color: #4e4e4f;
 	margin-bottom: 45px;
 }
+.single-education-sec {
+	margin-bottom: 30px;
+}
+.single-education-sec h5 {
+	font-size: 15px;
+	margin: 0;
+	line-height: 20px;
+}
+.single-education-sec h6 {
+	color: #575656;
+	font-size: 14px;
+	padding: 5px 0;
+}
+.single-education-sec p {
+	color: black;
+	font-size: 12px;
+	margin: -8px 0 0 0;
+}
+.line {
+	background-color: #d22b3b;
+	width: 10%;
+	height: 2px;
+	margin-top: 12px;
+}
+.single-skill {
+	margin-bottom: -20px;
+}
+.single-skill h5 {
+	font-size: 13px;
+	margin-right: -10px;
+}
 #about_me_sec{
 	
 }
@@ -327,7 +467,9 @@ Banner Section Start*/
 	min-height: 256px;
 }
 .single-service h1 {
-	font-size: 36px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: capitalize;
 }
 .single-service p {
 	color: gray;
@@ -371,7 +513,7 @@ Banner Section Start*/
 }
 .owl-dots {
 	margin: 0 auto;
-	width: 120px;
+	width: 210px;
 }
 .owl-dot{
 	
@@ -409,7 +551,7 @@ Banner Section Start*/
 	font-size: 14px;
 }
 .portfolio-menu button:hover {
-	background-color: #f2e5e7;
+	background-color: #eeecece6;
 }
 .port-menu-active {
 	background-color: #d22b3b !important;
