@@ -76,8 +76,14 @@ body{
 	animation-delay:.5s;
 	background-color: #F8047C;
 }
-span{
+.color-skin {
 	color: #d22b3b;
+}
+.bg-skin {
+	background-color: #d22b3b;
+}
+span{
+	
 }
 .current{
 	position:relative;
@@ -99,9 +105,9 @@ span{
 .box-btn {
 	padding: 5px 25px;
 	text-transform: capitalize;
-	background-color: #d22b3b;
 	color: white;
 	font-size: 14px;
+	background-color: #d22b3b;
 }
 .box-btn:hover {
 	color: white;
@@ -112,7 +118,6 @@ span{
 	padding: 4px 24px;
 	text-transform: capitalize;
 	border: 2px solid #d22b3b;
-	color: #d22b3b;
 	font-size: 14px;
 	position: relative;
 	overflow: hidden;
@@ -159,6 +164,7 @@ span{
 }
 .header-area .logo {
 	padding-top: 5px;
+	color: #d22b3b;
 }
 .header-area2 .logo {
 	padding-top: 0px;
@@ -168,7 +174,6 @@ span{
 	font-size: 34px;
 }
 .header-area .logo p {
-	color: #d22b3b;
 }
 .header-area2 .logo p {
 	color: white;
@@ -224,12 +229,73 @@ span{
 }
 
 /*Header Section End
-Banner Section Start*/
+Switcher Section Start*/
 
+.switcher-area {
+	width: 155px;
+	height: 105px;
+	color: white;
+	position: fixed;
+	top: 120px;
+	right: 0;
+	z-index: 999;
+}
+.switcher {
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	float: right;
+}
+.switcher i {
+	padding: 10px;
+	font-size: 30px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 99999;
+}
+.switcher-colors {
+	background-color: black;
+	overflow: hidden;
+	transition: 0.5s;
+	float: right;
+	top: -51px;
+	position: relative;
+	z-index: 9999;
+}
+.single-switcher-color {
+	width: 45px;
+	height: 45px;
+	margin: 3px;
+	float: left;
+}
+.single-switcher-color i {
+	color: blue;
+	padding: 5px 10px;
+	font-size: 38px;
+}
+#green i {
+	color: #16ac49;
+}
+#teal i {
+	color: teal;
+}
+#blue i{
+	color: #020240;
+}
+#violet i{
+	color: #4d0857;
+}
+#orange i{
+	color: #c17d25;
+}
+
+
+/*Switcher Section End
+Banner Section Start*/
 
 .banner-area {
 	padding-top: 80px;
-	background-color: ;
 }
 .banner {
 	padding: 0 100px;
@@ -243,17 +309,17 @@ Banner Section Start*/
 	font-size: 20px;
 	margin-left: 2px;
 }
-.banner-left h1 {
+.banner-left h2 {
 	font-weight: bold;
 	font-size: 62px;
 	position: relative;
 }
-.banner-left h1::before {
+.banner-left h2::before {
 	position: absolute;
 	content: "";
 	width: 257px;
 	height: 4px;
-	background-color: #ff98a8;
+	background-color: #80808096;
 	bottom: 0;
 	right: 50px;
 }
@@ -282,7 +348,6 @@ Banner Section Start*/
 .img-back-1 {
 	width: 360px;
 	height: 228px;
-	background-color: #d22b3b;
 	margin: 300px auto;
 	transform: rotate(151deg);
 	border-radius: 115%;
@@ -336,7 +401,7 @@ Banner Section Start*/
 	padding-right: 30px;
 	position: relative;
 }
-.about-img::after {
+.img-after {
 	position: absolute;
 	content: "";
 	width: 55%;
@@ -379,7 +444,6 @@ Banner Section Start*/
 }
 .about-right-menu{}
 .about-right-menu .btn {
-	background-color: #d22b3b;
 	color: white;
 	margin-bottom: 15px;
 	font-size: 12px;
@@ -464,11 +528,14 @@ Banner Section Start*/
 }
 .services{}
 .single-service {
+	color: #d22b3b;
 	box-shadow: 0px 0px 20px 1px #e1e1e3;
 	margin: 15px;
 	padding: 25px;
 	min-height: 256px;
 	padding-top: 50px;
+	position: relative;
+	overflow: hidden;
 }
 .single-service h1 {
 	font-size: 30px;
@@ -476,17 +543,46 @@ Banner Section Start*/
 	text-transform: capitalize;
 }
 .single-service p {
-	color: gray;
+	color: #000000ad;
 	font-size: 16px;
 	text-align: center;
 	font-family: initial;
 }
-.single-service:hover {
-	background-color: #d22b3b;
-	color: white;
+.service-hover-left {
+	position: absolute;
+	content: "";
+	border-top: 2px solid #d22b3b;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+	border-left: 2px solid #d22b3b;
+	width: 0;
+	height: 0;
+	visibility: hidden;
 }
-.single-service:hover p {
-	color: white;
+.single-service:hover .service-hover-left {
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+.service-hover-right {
+	position: absolute;
+	content: "";
+	border-bottom: 2px solid #d22b3b;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	transition: 0.5s;
+	border-right: 2px solid #d22b3b;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.single-service:hover .service-hover-right {
+	width: 100%;
+	height: 100%;
+	visibility: visible;
 }
 #web_design{
 	
@@ -497,7 +593,7 @@ Banner Section Start*/
 }
 .owl-prev span {
 	color: white;
-	background-color: #d22b3b;
+	background-color: gray;
 	position: absolute;
 	content: "";
 	top: 32%;
@@ -507,7 +603,7 @@ Banner Section Start*/
 }
 .owl-next span {
 	color: white;
-	background-color: #d22b3b;
+	background-color: gray;
 	position: absolute;
 	content: "";
 	top: 32%;
@@ -526,13 +622,30 @@ Banner Section Start*/
 	padding: 3px;
 	display: inline-block;
 	margin: 0 10px;
-	border: 2px solid #d22b3b;
+	border: 2px solid gray;
 }
 .owl-dot.active span{
-	background-color: #d22b3b;
+	background-color: gray;
 }
 /*Owl End*/
-
+/*.prev-default {
+	position: relative;
+	content: "";
+	background-color: #d22b3b;
+	width: 43px;
+	height: 64px;
+	top: -227px;
+	left: -80px;
+}
+.next-default {
+	position: relative;
+	content: "";
+	background-color: #d22b3b;
+	width: 44px;
+	height: 64px;
+	top: -291px;
+	right: -946px;
+}*/
 
 /*Service Section End*/
 
@@ -549,17 +662,22 @@ Banner Section Start*/
 }
 .portfolio-menu{}
 .portfolio-menu button {
-	border: 1px solid #d22b3b;
-	background-color: white;
 	padding: 5px 30px;
 	font-size: 14px;
 }
 .portfolio-menu button:hover {
 	background-color: #eeecece6;
+	color: black;
+}
+.port-btn {
+	background-color: #d22b3b;
+	color: white;
+	margin: 0 2px;
 }
 .port-menu-active {
-	background-color: #d22b3b !important;
-	color: white;
+	background-color: white !important;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .portfolio-items{}
 .single-portfolio {
@@ -596,7 +714,7 @@ Banner Section Start*/
 	transition: 0.5s;
 	visibility: hidden;
 }
-.project-description h1 {
+.project-description h2 {
 	text-transform: capitalize;
 	font-size: 28px;
 	font-weight: bold;
