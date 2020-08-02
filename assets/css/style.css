@@ -245,6 +245,8 @@ Switcher Section Start*/
 	width: 50px;
 	height: 50px;
 	float: right;
+	position: relative;
+	z-index: 99999
 }
 .switcher i {
 	padding: 10px;
@@ -259,8 +261,8 @@ Switcher Section Start*/
 	overflow: hidden;
 	transition: 0.5s;
 	float: right;
-	top: -51px;
-	position: relative;
+	top: 0;
+	position: absolute;
 	z-index: 9999;
 }
 .single-switcher-color {
