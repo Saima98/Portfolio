@@ -277,7 +277,7 @@
 .current::after {
 	width: 29%;
 	left: 5%;
-	both: -4px;
+	bottom: -4px;
 }
 	.switcher-area {
 		width: 120px;
