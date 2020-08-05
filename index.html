@@ -18,6 +18,8 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css"/>
 		<!--Animate-CSS-->
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css"/>
+		<!--Slick Nav CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css"/>
 		<!--Font awesome-->
 		<link rel="stylesheet" href="assets/css/all.min.css">
 		<!--Bootstrap CSS-->
@@ -28,27 +30,32 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css"/>
 	</head>
 	<body>
-		<div class="preloader">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+		<div class="container">
+			<div class="preloader">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 		<div class="header-area">
 			<div class="container">
 				<div class="header">
 					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="col-lg-4 col-md-4 col-sm-8">
 							<div class="logo">
 								<p>saima najmin</p>
 							</div>
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-12">
-							<div class="menu">
-								<ul id="nav">
+							<div class="slick-menu">
+								<button type="button" class="btn" data-toggle="collapse" data-target=".menu"><i class="fas fa-bars"></i></button>
+							</div>
+							<div class="menu collapse">
+								<ul id="nav" >
 									<li><a class="menu_li_a" href="#home">home</a></li>
 									<li><a class="menu_li_a" href="#about">about</a></li>
 									<li><a class="menu_li_a" href="#service">service</a></li>
@@ -61,7 +68,8 @@
 				</div>
 			</div>
 		</div>
-<!-- Banner Section End -->
+<!-- Header Section End -->
+<!-- Banner Section Start -->
 	<section class="banner-area" id="home">
 		<div class="container">
 			<div class="banner">
@@ -73,7 +81,9 @@
 							<p>I am Full stack Web developer with 3+ years of experience. I can design and develop and costumize your website</p>
 							<div class="link">
 								<a class="box-btn btn bg-skin" href="#contact">hire me</a>
-								<a class="border-btn btn color-skin" href="#portfolio">portfolio</a>
+								<a class="border-btn btn color-skin" href="#portfolio">portfolio
+									<div class="border-hover"></div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -89,10 +99,12 @@
 		</div>
 	</section>
 <!-- Banner Section End -->
-<!-- Switcher Section End -->
+<!-- Switcher Section Start -->
 	<div class="switcher-area">
-		<div class="switcher"data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		<div class="switcher">
+		<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 			<i class="fas fa-cog fa-spin"></i>
+		</button>
 		</div>
 		<div class="switcher-colors collapse multi-collapse" id="collapseOne">
 			<div class="single-switcher-color" onclick="style_changer('#16ac49')" id="green">
@@ -104,7 +116,7 @@
 			<div class="single-switcher-color" id="yellow" onclick="style_changer('#18b396')">
 				
 			</div>
-			<div class="single-switcher-color" id="blue" onclick="style_changer('#020240')">
+			<div class="single-switcher-color" id="blue" onclick="style_changer('#4747B7')">
 				<i class="fas fa-tint"></i>
 			</div>
 			<div class="single-switcher-color" id="violet" onclick="style_changer('#4d0857')">
@@ -115,7 +127,7 @@
 			</div>
 		</div>
 	</div>
-<!-- Switcher Section Start -->
+<!-- Switcher Section End -->
 <!-- About Section Start -->
 	<section class="about-area" id="about">
 		<div class="container">
@@ -149,7 +161,7 @@
 										<button type="button" class="btn about-menu-active bg-skin" id="about_me">About Me</button>
 										<button type="button" class="btn bg-skin" id="education">Education</button>
 										<button type="button" class="btn bg-skin" id="skill">Skill</button>
-										<button type="button bg-skin" class="btn bg-skin" id="experience">Experiance</button>
+										<button type="button" class="btn bg-skin" id="experience">Experiance</button>
 									</div>
 								</div>
 								<div class="single-about-desctiption" id="about_me_sec">
@@ -157,7 +169,9 @@
 									<p>I am Full stack Web developer with 3+ years of experience in building high quality responsive websites of various niche. I can convert PSD to HTML or create custom websites using bootstrap. Cross browser compatibility and responsive websites are my main focus point.I also develope website useing PHP,JavaScript,Laravel. I code full fresh and clean.</p>
 									<div class="link">
 										<a class="box-btn btn bg-skin" href="assets/files/Saima_Najmin-CV.pdf" download>Download CV</a>
-										<a class="border-btn btn color-skin" href="#contact">Contract</a>
+										<a class="border-btn btn color-skin" href="#contact">Contract
+											<div class="border-hover"></div>
+										</a>
 									</div>
 								</div>
 								<div class="single-about-desctiption" id="education_sec">
@@ -372,7 +386,7 @@
 					</div>
 				</div>
 				<div class="row portfolio-items">
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/hon-fron.png" alt="hon-front" />
@@ -384,7 +398,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 laravel">
+					<div class="col-lg-4 col-md-6 col-sm-12 laravel">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/bariwala_back.png" alt="bariwala_back" />
@@ -396,7 +410,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/moscow.png" alt="moscow" />
@@ -408,7 +422,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/wix.png" alt="wix" />
@@ -420,7 +434,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/wildone.jpg" alt="wildone" />
@@ -432,7 +446,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 laravel">
+					<div class="col-lg-4 col-md-6 col-sm-12 laravel">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/bloodman.jpg" alt="bloodman" />
@@ -444,7 +458,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 php">
+					<div class="col-lg-4 col-md-6 col-sm-12 php">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/hon-back.png" alt="hon-back" />
@@ -456,7 +470,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/magda.png" alt="magda" />
@@ -468,7 +482,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 frontend">
+					<div class="col-lg-4 col-md-6 col-sm-12 frontend">
 						<div class="single-portfolio">
 							<div class="project-img">
 								<img src="assets/img/bariwala_front.png" alt="bariwala_front" />
@@ -526,6 +540,7 @@
 	<script src="assets/js/jquery.min.js"></script>	
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.slicknav.min.js"></script>
 	<script src="assets/js/owl.carousel.js"></script>
 	<script src="assets/js/isotope.min.js"></script>
 	<script src="assets/js/jquery.nav.js"></script>
@@ -537,7 +552,7 @@
 		$(window).on("load", function(){
 			$(".preloader").fadeOut();
 		});
-		//switcher
+		//Slick Nav
 		
 		//WOW js
 		new WOW().init();
