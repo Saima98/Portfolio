@@ -186,11 +186,12 @@ span{
 	padding: 3px 7px 0px 7px;
 	margin-top: 3px;
 }
-.header-area .slick-menu button {
+.slick-btn {}
+.header-area .slick-btn {
 	background-color: #d22b3b;
 	color: white;
 }
-.header-area2 .slick-menu button {
+.header-area2 .slick-btn {
 	background-color: white;
 	color: #d22b3b;
 }

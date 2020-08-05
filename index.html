@@ -52,7 +52,7 @@
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-12">
 							<div class="slick-menu">
-								<button type="button" class="btn" data-toggle="collapse" data-target=".menu"><i class="fas fa-bars"></i></button>
+								<button type="button" class="btn slick-btn" data-toggle="collapse" data-target=".menu"><i class="fas fa-bars"></i></button>
 							</div>
 							<div class="menu">
 								<ul id="nav" >
@@ -717,6 +717,14 @@
 			}
 		}
 
+		function slick_btn(a) {
+			var b = document.getElementsByClassName("slick-btn");
+			for (var i = 0; i < b.length; i++) {
+				b[i].style.backgroundColor = "white";
+				b[i].style.color = a;
+			}
+		}
+
 		function menu_li_a() {
 			var b = document.getElementsByClassName("menu_li_a");
 			for (var i = 0; i < b.length; i++) {
@@ -821,6 +829,7 @@
 			header_area(a);
 			header_area2(a);
 			logo();
+			slick_btn(a);
 			menu_li_a();
 			img_back_2(a);
 			img_after(a);
